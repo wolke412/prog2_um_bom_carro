@@ -1,0 +1,1 @@
+psql -U uprog2 -d porg2_trabalho -a -f ./migrations.sql
