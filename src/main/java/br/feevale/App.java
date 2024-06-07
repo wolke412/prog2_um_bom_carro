@@ -7,6 +7,6 @@ public class App {
         
         PostgresClient client = new PostgresClient();
         
-        new MainPage();
+        new MainPage(client);
     }
 }

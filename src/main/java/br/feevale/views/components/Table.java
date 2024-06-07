@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 
 import javax.swing.BorderFactory;
+import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -44,7 +45,7 @@ public class Table extends JTable {
         this.setRowSelectionAllowed(true);
         this.setCellSelectionEnabled(false);
 
-        this.setSelectionBackground(Color.decode("#005DA1"));
+        this.setSelectionBackground(Color.BLUE);
     }
     
     private void setHeaderDefaultStyles() {
@@ -53,8 +54,10 @@ public class Table extends JTable {
        
         renderer.setForeground(Color.decode("#FFFFFF"));
         renderer.setBackground(Color.decode("#121424"));
-        // renderer.setBorder(new EmptyBorder(10,10, 10, 10));
+        renderer.setPreferredSize(new Dimension(0, 36));
+        renderer.setHorizontalAlignment(JLabel.CENTER);
 
+        // renderer.setBorder(new EmptyBorder(10,10, 10, 10));
         header.setDefaultRenderer(renderer);
     }
 

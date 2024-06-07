@@ -13,5 +13,4 @@ public interface Model<T extends Entity> {
     public boolean updateOne(T t);
 
     public boolean deleteOne(T t);
-
 }

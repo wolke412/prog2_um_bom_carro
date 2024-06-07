@@ -11,10 +11,13 @@ public class Viewport extends JFrame {
         setTitle(title);
 
         setResizable(true);
-        setVisible(true);
     }
 
     public void add( JComponent c, Object cs) {
         getContentPane().add(c, cs);
+    }
+
+    public void init() {
+        setVisible(true);
     }
 }
